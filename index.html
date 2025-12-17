@@ -7,8 +7,238 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+     <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alkhidmat Disaster Management Services</title>
+    <meta name="description"
+        content="Alkhidmat Foundation Pakistan provides humanitarian assistance and emergency response services to those affected by disasters and crises." />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="disester managent.css">
 </head>
+
+   
+    <style>
+        :root {
+            --primary-green: #008f51;
+            --primary-yellow: #FFCB11;
+            --primary-red: #da291c;
+            --text-dark: #333333;
+            --text-light: #666666;
+            --white: #ffffff;
+            --bg-light: #f9f9f9;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+            background-color: var(--white);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+        }
+
+        .clr-orange {
+            color: #e6a800;
+        }
+
+        .active-orange input[type="checkbox"]:checked+label {
+            color: var(--primary-green);
+            border-color: var(--primary-green);
+            font-weight: 700;
+        }
+
+        .akf-card {
+            transition: transform 0.3s ease;
+        }
+
+        .akf-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .check-list li {
+            transition: all 0.3s ease;
+        }
+
+        .check-list li:hover {
+            border-color: var(--primary-green);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Icons */
+        .ico {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 24px;
+            height: 24px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            font-style: normal;
+            font-size: 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #fff;
+            margin-right: 5px;
+        }
+
+        .contacts .ico {
+            background-color: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            width: 30px;
+            height: 30px;
+        }
+
+        .donate-cart .ico {
+            background-color: transparent;
+            color: var(--primary-green);
+            font-size: 20px;
+            width: auto;
+            height: auto;
+            border-radius: 0;
+        }
+
+        .ico-fb {
+            background-color: #3b5998;
+        }
+
+        .ico-twitter {
+            background-color: #1da1f2;
+        }
+
+        .ico-youtube {
+            background-color: #ff0000;
+        }
+
+        .ico-instagram {
+            background-color: #e1306c;
+        }
+
+        .ico-linkedin {
+            background-color: #0077b5;
+        }
+
+        .ico-tiktok {
+            background-color: #000;
+        }
+
+        .packeage-item {
+            transition: transform 0.3s ease;
+        }
+
+        .packeage-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .video-card {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .orange-line {
+            display: inline-block;
+            color: #e6a800;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+
+
 <body>
+    <!-- Header Top -->
+    <div class="bg-[#0060AE] text-white py-2">
+        <div class="max-w-[1200px] mx-auto px-5">
+            <div class="flex justify-between items-center">
+                <div class="left-head flex items-center">
+                    <div class="contacts flex items-center mr-5">
+                        <span class="ico">I</span>
+                        <span class="text-sm">+92 42 111 444 777</span>
+                    </div>
+                    <div class="contacts flex items-center">
+                        <span class="ico">E</span>
+                        <span class="text-sm">info@alkhidmat.org</span>
+                    </div>
+                </div>
+                <div class="right-head flex items-center space-x-5">
+                    <ul class="social-list flex space-x-3">
+                        <li><a href="#" class="text-white text-sm"><span class="ico ico-fb">f</span></a></li>
+                        <li><a href="#" class="text-white text-sm"><span class="ico ico-twitter">t</span></a></li>
+                        <li><a href="#" class="text-white text-sm"><span class="ico ico-youtube">y</span></a></li>
+                        <li><a href="#" class="text-white text-sm"><span class="ico ico-instagram">i</span></a></li>
+                        <li><a href="#" class="text-white text-sm"><span class="ico ico-linkedin">l</span></a></li>
+                        <li><a href="#" class="text-white text-sm"><span class="ico ico-tiktok">t</span></a></li>
+                    </ul>
+                    <div class="head-btn-wrp flex items-center space-x-4">
+                        <a href="#" class="text-white text-sm font-semibold">Donate Now</a>
+                        <a href="#" class="text-white text-sm font-semibold">international partners</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Bottom / Navigation -->
+    <div class="bg-white py-4 shadow-md">
+        <div class="max-w-[1200px] mx-auto px-5">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <div class="logo-wrap">
+                    <a href=""></a>
+                    <h2 class="text-xl font-bold font-['Outfit']">Alkhidmat Foundation</h2>
+                </div>
+
+                <!-- Navigation -->
+                <div class="nav-wrap flex items-center space-x-8">
+                    <ul class="nav-list hidden md:flex space-x-6">
+                        <li><a href="/index.html" class="font-semibold text-[#333] hover:text-[#008f51]">Home</a></li>
+
+
+                        <li><a href="#" class="font-semibold text-[#333] hover:text-[#008f51]">Disaster Response</a>
+                        </li>
+
+                        <li><a href="#" class="font-semibold text-[#333] hover:text-[#008f51]">Contact</a></li>
+                    </ul>
+
+                    <div class="nav-right-btns flex items-center space-x-4">
+                        <div class="nav-cart donate-cart flex items-center space-x-2">
+                            <span class="ico">🛒</span>
+                            <div class="donate-value">
+                                <span class="font-bold">Donation Cart</span>
+                                <span class="text-xs">PKR 0.00</span>
+                            </div>
+                        </div>
+                        <button class="bg-[#da291c] text-white px-4 py-2 rounded font-semibold hover:opacity-90">Donate
+                            Now</button>
+                    </div>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-2xl">
+                    ☰
+                </button>
+            </div>
+        </div>
+    </div>
 
 
     <!-- Hero Section -->
